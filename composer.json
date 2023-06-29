@@ -1,0 +1,33 @@
+{
+    "name": "qobo/cakephp-calendar",
+    "description": "Calendaring plugin for CakePHP",
+    "type": "cakephp-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Qobo Ltd",
+            "email": "info@qobo.biz",
+            "homepage": "https://www.qobo.biz",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "qobo/cakephp-utils": "^6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit":"^5.0",
+        "cakephp/cakephp-codesniffer": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Qobo\\Calendar\\": "src/",
+            "Qobo\\Calendar\\Test\\Fixture\\": "tests\\Fixture"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Qobo\\Calendar\\Test\\": "tests",
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+        }
+    }
+}
